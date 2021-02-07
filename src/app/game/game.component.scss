@@ -1,0 +1,73 @@
+.game {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #41ead4;
+  height: 50%;
+  width: 100%;
+  border-radius: 10px;
+}
+
+button {
+  font-family: "Gloria Hallelujah", cursive;
+}
+
+.game > p {
+  color: white;
+  margin: 5px;
+}
+
+.game > div > button {
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 1.4rem;
+  margin: 15px;
+}
+
+.game > div > button:first-child {
+  background-color: green;
+  color: white;
+}
+.game > div > button:first-child:disabled{
+    background-color: grey;
+}
+
+.game > div > button:nth-child(2) {
+  background-color: indianred;
+  color: white;
+}
+.game > div > button:nth-child(2):disabled{
+    background-color: grey;
+}
+
+
+.reset {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+.reset > button {
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 1.2rem;
+  margin: 15px;
+  background-color: #cf0bf1;
+  color: white;
+}
+
+.startGame {
+  background-color: #cf0bf1;
+  color: white;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 2rem;
+}
+
+.word {
+  font-size: 3em;
+}
+
+

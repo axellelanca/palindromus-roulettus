@@ -1,20 +1,17 @@
 <button *ngIf="!started; else game" (click)="startGame()"> Start Game !</button>
 
 <ng-template #game>
-    <p> Temps restant : {{ timeLeft }}</p>
-    <p> Score : {{ counter }}</p>
-    <p> {{ word }}</p>
+    <p>Temps restant : {{ timeLeft}}</p>
+    <p>Score : {{ counter }}</p>
+    <p>{{ word }}</p>
 
     <div>
-        <button> Yes !</button>
-        <button> Oh no !</button>
+        <button (click)="yesButton()">Yes !</button>
+        <button (click)="noButton()">Oh no !</button>
     </div>
 
     <div *ngIf="ended">
         <button (click)="startGame()">Reset</button>
         <app-twitter></app-twitter>
     </div>
-
-
-</ng-template>
-
+</ng-template>  
